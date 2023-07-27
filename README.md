@@ -10,9 +10,44 @@ Employing transfer learning techniques, this study has also successfully transfe
 ```
 python3 -m pip install SupervisedGRN
 ```
+# SupervisedGRN: Predictive Models for Gene Regulatory Networks
+
+SupervisedGRN is a Python package that leverages supervised machine learning and deep learning techniques to construct robust predictive models from transcriptomic data. It is designed to train on this high-dimensional data, extract key features, and make accurate predictions. The models generated can be used to uncover complex biological relationships and predict outcomes such as gene regulatory network behaviors, offering valuable insights for genomics and bioinformatics research.
+
+## Execution Instructions
+
+```bash
+# 1. Ensure your training and testing datasets are in the same directory.
+
+# 2. Import all the necessary modules from the SupervisedGRN package.
+from SupervisedGRN import data, ml, cnn, ann, hybrid
+
+# 3. Process your data using the data module's process function.
+data.process()
+
+# 4. Train your models. For example, to train the cnn model, use:
+cnn.train()
+# You can train the other models (ann, ml, hybrid) in the same manner.
+ann.train()
+ml.train()
+hybrid.train()
+
+# 5. Once your models are trained, you can use them to make predictions on new data. To infer using the cnn model, use:
+cnn.infer()
+# Similarly, you can make inferences using the other models:
+ann.infer()
+ml.infer()
+hybrid.infer()
+```
+
+
 Execution Instruction:
 
 1. Move the training and testing data sets into same folder.
-2. Import all the modules of SupervisedGRN using ```from SupervisedGRN import ml, cnn, ann, hybrid```
-3. To run cnn models use ```cnn.train()``` and for inference ```cnn.infer()```
-4. Similarly run other models using commands ```ml.train()```
+2. Import all the modules of SupervisedGRN using
+```from SupervisedGRN import data, ml, cnn, ann, hybrid```
+3. Run the data preprocessing step using  ```data.process()```
+4. To run cnn models use ```cnn.train()``` and for inference ```cnn.infer()```
+5. Similarly run other models using commands ```ann.train(), ml.train(), hybrid.train()```
+6. To infer using other models use commands ```ann.infer(),ml.infer(), hybrid.infer() ```
+7. Predictions are saved in the folder "Finaldata/Predictions"
