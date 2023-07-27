@@ -38,16 +38,5 @@ cnn.infer()
 ann.infer()
 ml.infer()
 hybrid.infer()
+# 6. The predictions made by the models are saved in the "Finaldata/Predictions" folder.
 ```
-
-
-Execution Instruction:
-
-1. Move the training and testing data sets into same folder.
-2. Import all the modules of SupervisedGRN using
-```from SupervisedGRN import data, ml, cnn, ann, hybrid```
-3. Run the data preprocessing step using  ```data.process()```
-4. To run cnn models use ```cnn.train()``` and for inference ```cnn.infer()```
-5. Similarly run other models using commands ```ann.train(), ml.train(), hybrid.train()```
-6. To infer using other models use commands ```ann.infer(),ml.infer(), hybrid.infer() ```
-7. Predictions are saved in the folder "Finaldata/Predictions"
