@@ -11,7 +11,7 @@ https://pypi.org/project/SupervisedGRN/
 
 # Install using pip
 ```
-python3 -m pip install SupervisedGRN
+pip install SupervisedGRN
 ```
 # SupervisedGRN: Predictive Models for Gene Regulatory Networks
 
